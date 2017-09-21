@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/t1"
+            android:text="Num pieces : "
+            android:textSize="@dimen/secondarysize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/numpiece"
+            android:text="003344"
+            android:layout_toRightOf="@+id/t1"
+            android:textColor="@color/my_primary"
+            android:textSize="@dimen/secondarysize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/t2"
+            android:text="Date: "
+            android:textSize="@dimen/secondarysize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/numcpt"
+            android:text="003344"
+            android:layout_toRightOf="@+id/t2"
+            android:textSize="@dimen/secondarysize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/t3"
+            android:text="DEBIT : "
+            android:textSize="@dimen/secondarysize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/savt"
+            android:text="003344"
+            android:layout_toRightOf="@+id/t3"
+            android:textSize="@dimen/secondarysize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/t4"
+            android:text="CREDIT : "
+            android:textSize="@dimen/secondarysize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/sapres"
+            android:text="003344"
+            android:layout_toRightOf="@+id/t4"
+            android:textSize="@dimen/secondarysize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/t5"
+            android:text="Libelle : "
+            android:textSize="@dimen/secondarysize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/libelle"
+            android:text="003344"
+            android:layout_toRightOf="@+id/t5"
+            android:textSize="@dimen/secondarysize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

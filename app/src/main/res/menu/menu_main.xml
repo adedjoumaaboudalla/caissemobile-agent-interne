@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="projet.mediasoft.com.caissemobile.MainActivity">
+
+    <item
+        android:id="@+id/menu_operation"
+        android:icon="@mipmap/ic_journal"
+        android:title="@string/journal"
+        app:showAsAction="never"/>
+
+    <!--
+    <item
+        android:id="@+id/menu_credit"
+        android:icon="@mipmap/ic_journal"
+        android:title="@string/credi"
+        app:showAsAction="never"/>
+        !-->
+
+</menu>

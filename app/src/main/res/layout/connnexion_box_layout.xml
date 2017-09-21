@@ -1,0 +1,87 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/window_backgroundold"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/entete"
+                android:background="@color/my_primary"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/connexion"
+                    android:textSize="24sp"
+                    android:textColor="@color/my_secondary_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/entete"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/pseuso"
+                    android:layout_marginTop="15dp"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/secondarysize"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:hint="@string/login"/>
+
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_marginTop="15dp"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/secondarysize"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:hint="@string/password"/>
+
+
+                <LinearLayout
+                    android:layout_below="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/valider"
+                        android:text="@string/conneter"
+                        android:textColor="@color/my_secondary_text"
+                        style="@style/SingleGradient"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"/>
+
+                    <Button
+                        android:id="@+id/testconnexion"
+                        android:text="@string/testconnexion"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/my_secondary_text"
+                        style="@style/SingleGradient"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>

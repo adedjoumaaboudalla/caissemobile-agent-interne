@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_chargement"
+            android:icon="@mipmap/ic_load"
+            android:title="@string/chargement" />
+        <item
+            android:id="@+id/menu_operation"
+            android:icon="@mipmap/ic_journal"
+            android:title="@string/journal" />
+
+
+        <item
+            android:id="@+id/menu_transfert"
+            android:icon="@mipmap/ic_transfert"
+            android:title="@string/transfert" />
+
+
+        <item
+            android:id="@+id/menu_billetage"
+            android:icon="@mipmap/ic_billetage"
+            android:title="@string/billetage" />
+
+        <item
+            android:id="@+id/menu_changepass"
+            android:icon="@mipmap/ic_verrou"
+            android:title="@string/menu_changepass" />
+
+
+        <item
+            android:id="@+id/menu_parametre"
+            android:icon="@mipmap/ic_param"
+            android:title="@string/param" />
+
+
+        <item
+            android:id="@+id/menu_apropos"
+            android:icon="@mipmap/ic_info"
+            android:title="@string/help" />
+
+
+        <!--
+
+
+        <item
+            android:id="@+id/menu_carte"
+            android:icon="@mipmap/ic_macarte"
+            android:title="@string/carte" />
+        <item
+            android:id="@+id/menu_repere"
+            android:icon="@mipmap/ic_macarte"
+            android:title="@string/repère" />
+        <item
+            android:id="@+id/menu_confidentialite"
+            android:icon="@mipmap/ic_verrou"
+            android:title="@string/confid" />
+
+        <item
+            android:id="@+id/menu_licence"
+            android:icon="@mipmap/ic_verrou"
+            android:title="@string/licence" /> !-->
+    </group>
+
+</menu>

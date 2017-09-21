@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="caissemobile.com.mediasoft.projet.microfinacaissemobile">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.INJECT_EVENT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.ConnexionActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ParametreActivity"
+            android:label="@string/title_activity_parametre" />
+        <activity
+            android:name=".activities.CompteActivity"
+            android:label="@string/title_activity_compte"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="caissemobile.com.mediasoft.projet.microfinacaissemobile.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ListeMembreActivity"
+            android:label="@string/title_activity_liste_membre" />
+        <activity
+            android:name=".activities.CategorieActivity"
+            android:label="@string/title_activity_categorie" />
+        <activity
+            android:name=".activities.NationaliteActivity"
+            android:label="@string/title_activity_nationalite" />
+        <activity
+            android:name=".activities.ProfessionActivity"
+            android:label="@string/title_activity_profession" />
+        <activity
+            android:name=".activities.ZoneActivity"
+            android:label="@string/title_activity_zone" />
+        <activity
+            android:name=".activities.CreditActivity"
+            android:label="@string/title_activity_credit" />
+        <activity
+            android:name=".activities.MembreActivity"
+            android:label="@string/title_activity_membre" />
+        <activity
+            android:name=".activities.OperationActivity"
+            android:label="@string/title_activity_operation" />
+
+        <provider
+            android:name=".services.OperationProvider"
+            android:authorities="caissemobile.com.mediasoft.projet.microfinacaissemobile.Operation"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".services.AuthenticatorService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":sync">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+        <service
+            android:name=".services.OperationSyncService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":sync">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/operationsyncadapter" />
+        </service>
+
+        <activity
+            android:name=".activities.BilletageActivity"
+            android:label="@string/title_activity_billetage" />
+        <activity
+            android:name=".activities.AproposActivity"
+            android:label="@string/title_activity_apropos" />
+
+        <provider
+            android:name=".services.CaisseProvider"
+            android:authorities="caissemobile.com.mediasoft.projet.microfinacaissemobile.Caisse"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".services.CaisseSyncService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":sync">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/caissesyncadapter" />
+        </service>
+
+        <activity
+            android:name=".activities.DemandeCreditActivity"
+            android:label="@string/title_activity_demande_credit"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".activities.ScannerActivity"
+            android:label="@string/title_activity_scanner"></activity>
+    </application>
+
+</manifest>

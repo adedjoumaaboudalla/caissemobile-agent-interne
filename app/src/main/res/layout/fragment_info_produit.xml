@@ -1,0 +1,480 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_secondary_text"
+    tools:context=".fragments.InfoProduitFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/numero"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_weight="60"
+                android:gravity="center_vertical"
+                android:background="@drawable/edit_text_background"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/numeroclient">
+            </EditText>
+
+            <Button
+                android:id="@+id/compteBtn"
+                android:layout_width="0dp"
+                android:layout_weight="25"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:text="@string/analyse"
+                style="@style/SingleGradient"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:textColor="@color/my_primary_text"
+            android:layout_marginRight="5dp"
+            android:text="@string/agent"
+            android:textSize="@dimen/secondarysize"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center"
+                android:background="@drawable/spinner_border1"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/compte"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/numerocpt">
+                </Spinner>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:text="@string/infos_client"
+            android:textColor="@color/my_primary"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/infoclientbackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <TextView
+                android:textColor="@color/my_primary_text"
+                android:layout_marginRight="5dp"
+                android:text="@string/produit"
+                android:textSize="@dimen/secondarysize"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:id="@+id/line0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="70"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/spinner_border1"
+                    android:orientation="horizontal">
+
+
+                    <Spinner
+                        android:id="@+id/produit"
+                        android:inputType="text"
+                        android:layout_width="match_parent"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:hint="@string/numerocpt">
+                    </Spinner>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:textColor="@color/my_primary_text"
+                android:layout_marginRight="5dp"
+                android:text="@string/cycle"
+                android:textSize="@dimen/secondarysize"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="70"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/spinner_border1"
+                    android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/cycle"
+                            android:inputType="text"
+                            android:layout_width="match_parent"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:hint="@string/numerocpt">
+                        </Spinner>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:textColor="@color/my_primary_text"
+                android:layout_marginRight="5dp"
+                android:text="@string/periodicite"
+                android:textSize="@dimen/secondarysize"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="70"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/spinner_border1"
+                    android:orientation="horizontal">
+
+
+                    <Spinner
+                        android:id="@+id/periodicite"
+                        android:inputType="text"
+                        android:layout_width="match_parent"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:hint="@string/numerocpt">
+                    </Spinner>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/line3"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/t3"
+                    android:textColor="@color/my_primary_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/mcalcul"
+                    android:textSize="@dimen/secondarysize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/mcalcul"
+                    android:minWidth="70dp"
+                    android:textColor="@color/my_primary"
+                    android:padding="5dp"
+                    android:textSize="@dimen/secondarysize"
+                    android:gravity="right"
+                    android:layout_toRightOf="@+id/t3"
+                    android:text=" 0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/line4"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/t4"
+                    android:textColor="@color/my_primary_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/modediffere"
+                    android:textSize="@dimen/secondarysize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/modediffere"
+                    android:textColor="@color/my_primary"
+                    android:minWidth="70dp"
+                    android:padding="5dp"
+                    android:textSize="@dimen/secondarysize"
+                    android:layout_toRightOf="@+id/t4"
+                    android:text=" Reparti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/infoclientbackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/line10"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/t13"
+                    android:textColor="@color/my_primary_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/tauxint"
+                    android:textSize="@dimen/secondarysize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tauxint"
+                    android:textColor="@color/my_primary"
+                    android:minWidth="70dp"
+                    android:padding="5dp"
+                    android:textSize="@dimen/secondarysize"
+                    android:gravity="right"
+                    android:layout_toRightOf="@+id/t13"
+                    android:text=" 0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/line11"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/line10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/t14"
+                    android:textColor="@color/my_primary_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/tauxdif"
+                    android:textSize="@dimen/secondarysize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tauxdif"
+                    android:textColor="@color/my_primary"
+                    android:minWidth="70dp"
+                    android:padding="5dp"
+                    android:textSize="@dimen/secondarysize"
+                    android:layout_toRightOf="@+id/t14"
+                    android:text=" Masculin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/line12"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/line11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/t5"
+                    android:textColor="@color/my_primary_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/tegr"
+                    android:textSize="@dimen/secondarysize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tegr"
+                    android:textColor="@color/my_primary"
+                    android:minWidth="70dp"
+                    android:padding="5dp"
+                    android:textSize="@dimen/secondarysize"
+                    android:layout_toRightOf="@+id/t5"
+                    android:text=" 0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/line13"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/line12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/t15"
+                    android:textColor="@color/my_primary_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/tega"
+                    android:textSize="@dimen/secondarysize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tega"
+                    android:textColor="@color/my_primary"
+                    android:minWidth="70dp"
+                     android:padding="5dp"
+                    android:textSize="@dimen/secondarysize"
+                    android:layout_toRightOf="@+id/t15"
+                    android:text=" 0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/precedant"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="40"
+                android:gravity="center"
+                style="@style/SingleGradient"
+                android:text="@string/precedant"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                />
+
+            <Button
+                android:id="@+id/suivant"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="40"
+                android:gravity="center"
+                style="@style/SingleGradient"
+                android:text="@string/suivant"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

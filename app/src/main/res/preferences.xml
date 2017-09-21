@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/generale" >
+
+        <EditTextPreference
+            android:key="ipConfig"
+            android:icon="@drawable/ic_ip"
+            android:dialogTitle="@string/iptitle"
+            android:title="IP"
+            android:summary="@string/ipsum"
+            />
+
+        <EditTextPreference
+            android:key="nomSociete"
+            android:icon="@drawable/ic_ip"
+            android:dialogTitle="Etablissement"
+            android:title="Etablissement"
+            android:summary="Nom de l'etablissement"
+            />
+
+        <EditTextPreference
+            android:key="adresse"
+            android:icon="@drawable/ic_ip"
+            android:dialogTitle="Adresse"
+            android:title="Adresse"
+            android:summary="Adresse de l'établissement"
+            />
+
+        <EditTextPreference
+            android:key="messagefinal"
+            android:icon="@drawable/ic_ip"
+            android:dialogTitle="Message final"
+            android:title="Message final"
+            android:summary="Message en bas des ticket de vente"
+            />
+
+
+        <CheckBoxPreference
+            android:key="imprimenteexterne"
+            android:icon="@drawable/ic_diffusuion"
+            android:dialogTitle="IMPRIMANTE"
+            android:title="IMPRIMENTE Configuration"
+            android:summaryOn="Imprimente externe"
+            android:summaryOff="Imprimente interne"
+            android:defaultValue="false"
+            />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

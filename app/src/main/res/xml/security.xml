@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/generale" >
+
+
+        <CheckBoxPreference
+            android:key="checkpassword"
+            android:icon="@mipmap/ic_security"
+            android:title="@string/passwordactiv"
+            android:summaryOn="@string/actif"
+            android:summaryOff="@string/desactif"
+            android:defaultValue="false"
+            />
+
+        <EditTextPreference
+            android:key="securitypassword"
+            android:dependency="checkpassword"
+            android:icon="@mipmap/ic_security"
+            android:dialogTitle="@string/passworde"
+            android:title="@string/passworde"
+            android:summary="@string/passsum"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

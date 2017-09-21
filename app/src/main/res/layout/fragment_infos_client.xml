@@ -1,0 +1,264 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_secondary_text"
+    tools:context=".fragments.InfosClientFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/numero"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:gravity="center_vertical"
+                android:background="@drawable/edit_text_background"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/numeroclient">
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/compteBtn"
+                android:layout_width="0dp"
+                android:layout_weight="15"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/ic_loupe"
+                style="@style/SingleGradient"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:textColor="@color/my_primary_text"
+            android:layout_marginRight="5dp"
+            android:text="@string/compte"
+            android:textSize="@dimen/secondarysize"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="match_parent" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center"
+                android:background="@drawable/spinner_border1"
+                android:orientation="horizontal">
+
+
+                <Spinner
+                    android:id="@+id/compte"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/numerocpt">
+                </Spinner>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/infoclientbackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/line3"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/t3"
+                    android:textColor="@color/my_primary_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/solde"
+                    android:textSize="@dimen/secondarysize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/solde"
+                    android:textColor="@color/my_secondary_text"
+                    android:minWidth="70dp"
+                    android:background="@drawable/background_bleu_arrondi"
+                    android:padding="5dp"
+                    android:textSize="@dimen/secondarysize"
+                    android:gravity="right"
+                    android:layout_toRightOf="@+id/t3"
+                    android:text=" 0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/line4"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/t4"
+                    android:textColor="@color/my_primary_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/sexe"
+                    android:textSize="@dimen/secondarysize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/sexe"
+                    android:textColor="@color/my_secondary_text"
+                    android:minWidth="70dp"
+                    android:background="@drawable/background_bleu_arrondi"
+                    android:padding="5dp"
+                    android:textSize="@dimen/secondarysize"
+                    android:layout_toRightOf="@+id/t4"
+                    android:text=" Masculin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/line5"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/t5"
+                    android:textColor="@color/my_primary_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/age"
+                    android:textSize="@dimen/secondarysize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/produit"
+                    android:textColor="@color/my_secondary_text"
+                    android:minWidth="70dp"
+                    android:gravity="right"
+                    android:background="@drawable/background_bleu_arrondi"
+                    android:padding="5dp"
+                    android:textSize="@dimen/secondarysize"
+                    android:layout_toRightOf="@+id/t5"
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/numproduit"
+            android:visibility="gone"
+            android:textColor="@color/my_primary_text"
+            android:text=""
+            android:textSize="@dimen/secondarysize"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/intitule"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:minWidth="70dp"
+            android:background="@drawable/edit_text_background"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:hint="@string/intitule"/>
+
+        <EditText
+            android:id="@+id/adresse"
+            android:layout_width="match_parent"
+            android:minHeight="100dp"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:padding="5dp"
+            android:hint="@string/adresse"
+            android:background="@drawable/edit_text_background"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/precedant"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="40"
+                android:gravity="center"
+                style="@style/SingleGradient"
+                android:text="@string/precedant"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                />
+
+            <Button
+                android:id="@+id/suivant"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="40"
+                android:gravity="center"
+                style="@style/SingleGradient"
+                android:text="@string/suivant"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

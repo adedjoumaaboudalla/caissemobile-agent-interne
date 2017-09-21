@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/generale" >
+
+
+        <EditTextPreference
+            android:key="ipserver"
+            android:icon="@mipmap/ic_msgfinal"
+            android:dialogTitle="@string/ipserver"
+            android:title="@string/ipserver"
+            android:summary="@string/ipserversumary"
+            />
+
+
+        <CheckBoxPreference
+            android:key="agencemulti"
+            android:icon="@mipmap/ic_ip"
+            android:title="@string/agencemulti"
+            android:summaryOff="@string/agencemultioff"
+            android:summaryOn="@string/agencemultion"
+            android:defaultValue="false"
+            />
+
+
+
+        <CheckBoxPreference
+            android:key="demande_pin"
+            android:icon="@mipmap/ic_security"
+            android:title="@string/denmande_pin"
+            android:summaryOff="@string/pinoff"
+            android:summaryOn="@string/pinon"
+            android:defaultValue="true"
+            />
+
+        <!--
+
+
+        <EditTextPreference
+            android:key="smsnumber"
+            android:dependency="type_communication"
+            android:icon="@mipmap/ic_sms"
+            android:dialogTitle="@string/numgsm"
+            android:title="@string/numgsm"
+            android:summary="Numero gsm du serveur"
+            />
+
+        <CheckBoxPreference
+            android:key="membre"
+            android:icon="@mipmap/ic_membre"
+            android:title="@string/membre"
+            android:summaryOff="@string/membreoff"
+            android:summaryOn="@string/membreon"
+            android:defaultValue="true"
+            />
+
+        <CheckBoxPreference
+            android:key="type_communication"
+            android:icon="@mipmap/ic_com"
+            android:title="@string/typeComunication"
+            android:summaryOff="@string/internet"
+            android:summaryOn="@string/sms"
+            android:defaultValue="false"
+            />
+
+            !-->
+
+
+                <CheckBoxPreference
+                    android:key="imprimenteexterne"
+                    android:icon="@mipmap/ic_diffusuion"
+                    android:title="@string/impconfig"
+                    android:summaryOn="@string/impext"
+                    android:summaryOff="@string/impint"
+                    android:defaultValue="false"
+                    />
+
+                <EditTextPreference
+                    android:key="bluetoothConfig"
+                    android:dependency="imprimenteexterne"
+                    android:icon="@mipmap/ic_diffusuion"
+                    android:dialogTitle="Nom de l'imprimente"
+                    android:title="Imprimente"
+                    android:summary="Nom du peripherique bluetooth en charge de l'impression"
+                    />
+
+                <EditTextPreference
+                    android:key="messagefinal"
+                    android:icon="@mipmap/ic_msgfinal"
+                    android:dialogTitle="@string/lastmsg"
+                    android:title="@string/lastmsg"
+                    android:summary="@string/msgbottomticket"
+                    />
+
+                <EditTextPreference
+                    android:key="adresse"
+                    android:icon="@mipmap/ic_msgfinal"
+                    android:dialogTitle="@string/adresse"
+                    android:title="@string/adresse"
+                    android:summary="@string/adressesociete"
+                    />
+
+            </PreferenceCategory>
+
+        </PreferenceScreen>

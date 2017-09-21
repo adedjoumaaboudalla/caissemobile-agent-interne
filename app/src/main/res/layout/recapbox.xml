@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/interval"
+            android:text="32.33.22"
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/op"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/nb"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/mtnn"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/my_divider"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/depo"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/nbr1"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:text="0"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/mtn1"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:text="0"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/my_divider"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/retrait"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/nbr2"
+                android:layout_width="0dp"
+                android:text="0"
+                android:layout_weight="30"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/mtn2"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:text="0"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/my_divider"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/adhesion"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/nbr3"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:text="0"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/mtn3"
+                android:layout_width="0dp"
+                android:text="0"
+                android:layout_weight="30"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/my_divider"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/rembour"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/nbr4"
+                android:layout_width="0dp"
+                android:text="0"
+                android:layout_weight="30"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/mtn4"
+                android:layout_width="0dp"
+                android:text="0"
+                android:layout_weight="30"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/imp"
+            android:text="@string/imprimer"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/close"
+            android:text="@string/fermer"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+
+</ScrollView>

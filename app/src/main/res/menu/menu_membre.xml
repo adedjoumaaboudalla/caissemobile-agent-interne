@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_liste_membre"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_charger"
+        android:title="@string/action_liste_membre"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_liste_adhesion_annule"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_charger"
+        android:title="@string/action_liste_adhesion_annule"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_liste_adhesion_nvel"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_charger"
+        android:title="@string/action_liste_adhesion_nvel"
+        app:showAsAction="never" />
+
+</menu>

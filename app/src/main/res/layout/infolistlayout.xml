@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_above="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/racine"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/annuler"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="40"
+            android:gravity="center"
+            style="@style/SingleGradient"
+            android:text="@string/fermer"
+            />
+
+        <Button
+            android:id="@+id/valider"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="40"
+            android:gravity="center"
+            style="@style/SingleGradient"
+            android:text="@string/valid"
+            />
+    </LinearLayout>
+</RelativeLayout>

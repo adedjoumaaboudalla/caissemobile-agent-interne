@@ -1,0 +1,457 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AdhesionFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="@string/dateadesion"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/dateadhesion"
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="85"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:background="@drawable/edit_text_background"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_action_date"
+                style="@style/SingleGradient"
+                android:layout_weight="15"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:text="@string/nom"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:inputType="textCapSentences"
+            android:singleLine="true"
+            android:background="@drawable/edit_text_background"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="@string/prenom"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/prenom"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:background="@drawable/edit_text_background"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="@string/datenaiss"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/datenaiss"
+                android:padding="5dp"
+                android:editable="false"
+                android:layout_width="0dp"
+                android:layout_weight="85"
+                android:gravity="center_vertical"
+                android:background="@drawable/edit_text_background"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:id="@+id/datebox"
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_action_date"
+                style="@style/SingleGradient"
+                android:layout_weight="15"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:text="@string/sexe"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/sexe"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/masculin">
+            <RadioButton
+                android:id="@+id/masculin"
+                android:checked="true"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="match_parent"
+                android:text="@string/masculin"/>
+            <RadioButton
+                android:id="@+id/feminin"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="match_parent"
+                android:text="@string/feminin"/>
+            <RadioButton
+                android:id="@+id/pm"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="match_parent"
+                android:text="@string/pm"/>
+        </RadioGroup>
+
+
+
+
+        <TextView
+            android:text="@string/tel"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/tel"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:background="@drawable/edit_text_background"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:text="@string/cat"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/categorie"
+                android:layout_width="0dp"
+                android:layout_weight="85"
+                android:editable="false"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/edit_text_background"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:id="@+id/catbtn"
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_action_go"
+                style="@style/SingleGradient"
+                android:layout_weight="15"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:text="@string/prof"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/profession"
+                android:layout_width="0dp"
+                android:layout_weight="85"
+                android:editable="false"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/edit_text_background"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:id="@+id/profBtn"
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_action_go"
+                style="@style/SingleGradient"
+                android:layout_weight="15"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:text="@string/nat"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/nationalite"
+                android:layout_width="0dp"
+                android:layout_weight="85"
+                android:editable="false"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/edit_text_background"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:id="@+id/natBtn"
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_action_go"
+                style="@style/SingleGradient"
+                android:layout_weight="15"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:text="@string/zone"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/zone"
+                android:layout_width="0dp"
+                android:layout_weight="85"
+                android:editable="false"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/edit_text_background"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:id="@+id/zoneBtn"
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_action_go"
+                style="@style/SingleGradient"
+                android:layout_weight="15"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:text="@string/adresse"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/adresse"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:background="@drawable/edit_text_background"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/produit"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:background="@drawable/spinner_border1"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/produit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+        </RelativeLayout>
+
+        <TextView
+            android:text="@string/montantrecu"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+        <EditText
+            android:id="@+id/montant"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:background="@drawable/edit_text_background"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/location"
+            android:text="@string/gps"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/position"
+            android:textStyle="bold"
+            android:textColor="@color/my_primary"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:background="@color/gris_leger"
+            android:src="@mipmap/ic_membre"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+
+        <TextView
+            android:id="@+id/transaction"
+            android:textStyle="bold"
+            android:textColor="@color/state0"
+            android:visibility="gone"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/nummembre"
+            android:textStyle="bold"
+            android:textColor="@color/state0"
+            android:visibility="gone"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/valider"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="40"
+                android:gravity="center"
+                style="@style/SingleGradient"
+                android:text="@string/save"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                />
+
+            <Button
+                android:id="@+id/annuler"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="40"
+                android:gravity="center"
+                style="@style/SingleGradient"
+                android:text="@string/effacer"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
